@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "UIImage+ImageEffects.h"
 
 @interface ViewController ()
+
+@property (nonatomic, retain) CALayer *layer;
 
 @end
 
@@ -16,9 +19,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.view.backgroundColor = [UIColor whiteColor];
+    [self createC_];
+    
 }
 
+- (void) createC_ {
+    UIImage *ui_image = [UIImage imageNamed:@"侧栏滑动界面背景图.png"];
+    CGImageRef cg_imgRef = (__bridge CGImageRef)(ui_image.CIImage);
+    cg_imgRef = CGImageCreateWithImageInRect(cg_imgRef, CGRectMake(0,0 , 100, 100));
+    UIImage *ui_imageNew = [UIImage imageWithCGImage:cg_imgRef];
+    UIImageView *imageView = [[UIImageView alloc] initWithImage:ui_imageNew];
+    [self.view addSubview:imageView];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

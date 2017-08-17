@@ -15,6 +15,8 @@
 		7C39C48A1F3AF3E2006B4D06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C39C4881F3AF3E2006B4D06 /* LaunchScreen.storyboard */; };
 		7C39C4951F3AF3E2006B4D06 /* UIKItFrameWorkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C39C4941F3AF3E2006B4D06 /* UIKItFrameWorkTests.m */; };
 		7C39C4A01F3AF3E2006B4D06 /* UIKItFrameWorkUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C39C49F1F3AF3E2006B4D06 /* UIKItFrameWorkUITests.m */; };
+		7C39C4AE1F3AF82D006B4D06 /* 侧栏滑动界面背景图.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C39C4AD1F3AF82D006B4D06 /* 侧栏滑动界面背景图.png */; };
+		7C39C4B21F3AFC7B006B4D06 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C39C4B11F3AFC7B006B4D06 /* UIImage+ImageEffects.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		7C39C49B1F3AF3E2006B4D06 /* UIKItFrameWorkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIKItFrameWorkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C39C49F1F3AF3E2006B4D06 /* UIKItFrameWorkUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIKItFrameWorkUITests.m; sourceTree = "<group>"; };
 		7C39C4A11F3AF3E2006B4D06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C39C4AD1F3AF82D006B4D06 /* 侧栏滑动界面背景图.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "侧栏滑动界面背景图.png"; sourceTree = "<group>"; };
+		7C39C4B01F3AFC7B006B4D06 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		7C39C4B11F3AFC7B006B4D06 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +106,8 @@
 		7C39C4791F3AF3E2006B4D06 /* UIKItFrameWork */ = {
 			isa = PBXGroup;
 			children = (
+				7C39C4AF1F3AFC7B006B4D06 /* UIImage+ImageEffects */,
+				7C39C4AD1F3AF82D006B4D06 /* 侧栏滑动界面背景图.png */,
 				7C39C47D1F3AF3E2006B4D06 /* AppDelegate.h */,
 				7C39C47E1F3AF3E2006B4D06 /* AppDelegate.m */,
 				7C39C4801F3AF3E2006B4D06 /* ViewController.h */,
@@ -138,6 +145,15 @@
 				7C39C4A11F3AF3E2006B4D06 /* Info.plist */,
 			);
 			path = UIKItFrameWorkUITests;
+			sourceTree = "<group>";
+		};
+		7C39C4AF1F3AFC7B006B4D06 /* UIImage+ImageEffects */ = {
+			isa = PBXGroup;
+			children = (
+				7C39C4B01F3AFC7B006B4D06 /* UIImage+ImageEffects.h */,
+				7C39C4B11F3AFC7B006B4D06 /* UIImage+ImageEffects.m */,
+			);
+			path = "UIImage+ImageEffects";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +267,7 @@
 			files = (
 				7C39C48A1F3AF3E2006B4D06 /* LaunchScreen.storyboard in Resources */,
 				7C39C4871F3AF3E2006B4D06 /* Assets.xcassets in Resources */,
+				7C39C4AE1F3AF82D006B4D06 /* 侧栏滑动界面背景图.png in Resources */,
 				7C39C4851F3AF3E2006B4D06 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,6 +293,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C39C4B21F3AFC7B006B4D06 /* UIImage+ImageEffects.m in Sources */,
 				7C39C4821F3AF3E2006B4D06 /* ViewController.m in Sources */,
 				7C39C47F1F3AF3E2006B4D06 /* AppDelegate.m in Sources */,
 				7C39C47C1F3AF3E2006B4D06 /* main.m in Sources */,
@@ -516,6 +534,7 @@
 				7C39C4A61F3AF3E2006B4D06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7C39C4A71F3AF3E2006B4D06 /* Build configuration list for PBXNativeTarget "UIKItFrameWorkTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +543,7 @@
 				7C39C4A91F3AF3E2006B4D06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7C39C4AA1F3AF3E2006B4D06 /* Build configuration list for PBXNativeTarget "UIKItFrameWorkUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +552,7 @@
 				7C39C4AC1F3AF3E2006B4D06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
